@@ -147,8 +147,8 @@
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="jLabel2" min="-2" pref="111" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="Tf_Password" alignment="0" max="32767" attributes="0"/>
-                          <Component id="tf_NameUser" alignment="0" max="32767" attributes="0"/>
+                          <Component id="JPasswordField_Password" alignment="0" max="32767" attributes="0"/>
+                          <Component id="JtextFiel_NameUser" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="btn_Login" pref="122" max="32767" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -184,14 +184,14 @@
                           <Component id="Label_Icon_User" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                      <Component id="tf_NameUser" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="JtextFiel_NameUser" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="Label_Icon_Lock" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Tf_Password" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="JPasswordField_Password" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jCheckBox1_ShowPassword" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -227,9 +227,9 @@
                 <Property name="text" type="java.lang.String" value="Password: "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tf_NameUser">
+            <Component class="javax.swing.JTextField" name="JtextFiel_NameUser">
             </Component>
-            <Component class="javax.swing.JPasswordField" name="Tf_Password">
+            <Component class="javax.swing.JPasswordField" name="JPasswordField_Password">
             </Component>
             <Component class="javax.swing.JCheckBox" name="jCheckBox1_ShowPassword">
               <Properties>

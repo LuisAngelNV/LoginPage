@@ -40,8 +40,8 @@ public class LoginForms extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        tf_NameUser = new javax.swing.JTextField();
-        Tf_Password = new javax.swing.JPasswordField();
+        JtextFiel_NameUser = new javax.swing.JTextField();
+        JPasswordField_Password = new javax.swing.JPasswordField();
         jCheckBox1_ShowPassword = new javax.swing.JCheckBox();
         btn_Login = new javax.swing.JButton();
         Label_Icon_User = new javax.swing.JLabel();
@@ -142,8 +142,8 @@ public class LoginForms extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(Tf_Password, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tf_NameUser, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JPasswordField_Password, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JtextFiel_NameUser, javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(btn_Login, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
@@ -170,13 +170,13 @@ public class LoginForms extends javax.swing.JFrame {
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Label_Icon_User, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(4, 4, 4)
-                .addComponent(tf_NameUser, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(JtextFiel_NameUser, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(Label_Icon_Lock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Tf_Password, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(JPasswordField_Password, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jCheckBox1_ShowPassword)
@@ -222,7 +222,12 @@ public class LoginForms extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_LoginActionPerformed
 
     private void jCheckBox1_ShowPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1_ShowPasswordActionPerformed
-        // TODO add your handling code here:
+        // Mostrar la contraseña que se tiene en el showPassword
+        if(jCheckBox1_ShowPassword.isSelected()){
+            JPasswordField_Password.setEchoChar((char)0);
+        }else {
+            JPasswordField_Password.setEchoChar('*');
+        }
     }//GEN-LAST:event_jCheckBox1_ShowPasswordActionPerformed
 
     private void Label_Icon_CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Label_Icon_CloseMouseClicked
@@ -266,10 +271,11 @@ public class LoginForms extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField JPasswordField_Password;
+    private javax.swing.JTextField JtextFiel_NameUser;
     private javax.swing.JLabel Label_Icon_Close;
     private javax.swing.JLabel Label_Icon_Lock;
     private javax.swing.JLabel Label_Icon_User;
-    private javax.swing.JPasswordField Tf_Password;
     private javax.swing.JButton btn_Login;
     private javax.swing.JCheckBox jCheckBox1_ShowPassword;
     private javax.swing.JLabel jLabel1;
@@ -279,6 +285,5 @@ public class LoginForms extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField tf_NameUser;
     // End of variables declaration//GEN-END:variables
 }
